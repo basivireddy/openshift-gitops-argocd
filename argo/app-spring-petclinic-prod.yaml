@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: app/spring-petclinic-prod
+    path: apps/spring-petclinic-prod
     repoURL: https://github.com/basivireddy/openshift-gitops-argocd.git
     targetRevision: main
   syncPolicy:

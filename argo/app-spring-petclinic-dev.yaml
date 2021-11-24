@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-spring-petclinic
+  name: app-spring-petclinic-dev
   namespace: spring-petclinic-dev
 spec:
   destination:
@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: app/spring-petclinic-dev
+    path: apps/spring-petclinic-dev
     repoURL: https://github.com/basivireddy/openshift-gitops-argocd.git
     targetRevision: main
   syncPolicy:
